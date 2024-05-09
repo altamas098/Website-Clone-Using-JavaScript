@@ -6,7 +6,8 @@
 :root {
   --primary-color: rgb(229, 9, 20);
   --bg-color: #000;
-  --gradient: linear-gradient(#292828, #ffffff, #212121);
+  --gradient: linear-gradient(#292828, #767676, #302f2f);
+  --bg-color: #000;
 }
 
 body {
@@ -17,9 +18,9 @@ body {
   background: url("bg.jpg"), var(--gradient);
   background-blend-mode: multiply;
   height: 77vh;
-  border-bottom: 10px solid rgb(44, 44, 44);
+  border-bottom: 6px solid rgb(82, 82, 82);
 }
-
+/* NAV BAR START HERE */
 .nav {
   display: flex;
   align-items: center;
@@ -35,8 +36,8 @@ body {
 .drop-down {
   background: rgb(42, 42, 42);
   margin-right: 15px;
-  border-radius: 6px;
-  border: 2px solid rgb(219, 215, 215);
+  border-radius: 3px;
+  border: 1.5px solid rgb(107, 107, 107);
   /* margin-top: 30px; */
 }
 
@@ -58,8 +59,8 @@ body {
   border: none;
   background-color: transparent;
   color: #fff;
-  font-size: 1rem;
-  border-radius: 2px;
+  font-size: 1.2rem;
+  border-radius: 1.5px;
   padding: 8px 20px 8px 50px;
 }
 
@@ -85,3 +86,188 @@ option {
   font-family: sans-serif;
   /* margin-top: 13px; */
 }
+
+/* NAV BAR END HERE */
+
+/* MAIN AREA START HERE */
+.main-title {
+  text-align: center;
+  color: #fff;
+  margin-top: 250px;
+}
+
+.main-heading {
+  font-size: 3.2rem;
+  /* font-weight: 800; */
+  letter-spacing: -1px;
+}
+
+.secondry-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 30px;
+  letter-spacing: 0.8px;
+}
+
+.secondry-subheading {
+  font-size: 1.3rem;
+  margin-top: 25px;
+  letter-spacing: 1px;
+}
+
+.input-box {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-area {
+  border: 2px solid #878787;
+  font-size: 1.3rem;
+  font-weight: 600;
+  width: 20vw;
+  background: transparent;
+  border-radius: 5px;
+  padding: 15px;
+  color: #fff;
+}
+.btn-getStarted {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 12px 35px 12px 25px;
+  border-radius: 5px;
+  margin-left: 10px;
+
+  cursor: pointer;
+  font-family: sans-serif;
+}
+/* MAIN AREA END HERE */
+
+/*FIRST MAIN CONTENT START HERE */
+
+.main {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 72px;
+  border-bottom: 6px solid rgb(82, 82, 82);
+  /* z-index: -10; */
+}
+main .main-content {
+  max-width: 650px;
+  color: #fff;
+}
+
+.img-video {
+  margin-left: 6px;
+}
+.img1 {
+  z-index: 2;
+}
+.video-1 {
+  position: absolute;
+  bottom: -225px;
+  left: 1044px;
+}
+/*FIRST MAIN CONTENT  END */
+/*SECOND MAIN CONTENT START HERE */
+/* .second-main {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 72px;
+  border-bottom: 6px solid rgb(82, 82, 82);
+} */
+
+.download-box {
+  position: absolute;
+  background-color: #000;
+  border-radius: 10px;
+  top: 1800px;
+  left: 430px;
+  border: 2px solid #878787;
+  width: 20vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.download-box > img {
+  width: 4vw;
+  height: 10vh;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.strange-things-title {
+  font-weight: 300;
+  margin-right: 60px;
+  letter-spacing: 1px;
+
+  color: #fff;
+  position: relative;
+  top: -10px;
+}
+
+.download-box p {
+  color: blue;
+}
+.download-box span {
+  color: #fff;
+}
+.fa-download {
+  cursor: pointer;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.fa-download:hover {
+  color: blue;
+  filter: drop-shadow(0 0 5rem rgb(0, 0, 85));
+}
+
+/* SECOND MAIN CONTENT END */
+
+/*THIRD MAIN CONTENT START HERE */
+/* .third-main {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 72px;
+  border-bottom: 6px solid rgb(82, 82, 82);
+} */
+/*THIRD MAIN CONTENT END HERE */
+
+/* FOURTH MAIN CONTENT START HERE */
+/* .fourth-main{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 72px;
+  border-bottom: 6px solid rgb(82, 82, 82);
+} */
+
+.video-2 {
+  width: 400px;
+  position: absolute;
+  bottom: -1382px;
+  left: 1072px;
+}
+/* FOURTH MAIN CONTENT END HERE */
+
+/* FOOTER SECTION STARTS HERE */
+.footer-title {
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  /* margin-top: 20px; */
+}
+.main-heading {
+  margin-top: 20px;
+}
+/* FOOTER SECTION END HERE */
