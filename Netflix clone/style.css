@@ -18,7 +18,7 @@ body {
   background: url("bg.jpg"), var(--gradient);
   background-blend-mode: multiply;
   height: 77vh;
-  border-bottom: 6px solid rgb(82, 82, 82);
+  border-bottom: 8px solid rgb(41, 41, 41);
 }
 /* NAV BAR START HERE */
 .nav {
@@ -42,9 +42,9 @@ body {
 }
 
 .fa-language {
-  position: relative;
+  position: absolute;
   /* top: 2px; */
-  left: 49px;
+  right: 30%;
 
   color: #fff;
 }
@@ -59,9 +59,9 @@ body {
   border: none;
   background-color: transparent;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border-radius: 1.5px;
-  padding: 8px 20px 8px 50px;
+  padding: 8px 8px 8px 48px;
 }
 
 /* #language:hover {
@@ -78,7 +78,7 @@ option {
 .btn-signIn {
   background-color: var(--primary-color);
   color: #fff;
-
+  font-size: 1.2em;
   padding: 8px 16px;
   border-radius: 5px;
 
@@ -98,7 +98,7 @@ option {
 
 .main-heading {
   font-size: 3.2rem;
-  /* font-weight: 800; */
+  font-weight: 800;
   letter-spacing: -1px;
 }
 
@@ -110,7 +110,7 @@ option {
 }
 
 .secondry-subheading {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-top: 25px;
   letter-spacing: 1px;
 }
@@ -123,23 +123,24 @@ option {
 }
 
 .input-area {
-  border: 2px solid #878787;
-  font-size: 1.3rem;
+  border: 1px solid #878787;
+  font-size: 1rem;
   font-weight: 600;
   width: 20vw;
   background: transparent;
   border-radius: 5px;
-  padding: 15px;
+  padding: 18px;
   color: #fff;
 }
 .btn-getStarted {
   background-color: var(--primary-color);
   color: #fff;
-  font-size: 1.8rem;
-  padding: 12px 35px 12px 25px;
-  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: 550;
+  padding: 14px 30px 14px 25px;
+  border-radius: 6px;
   margin-left: 10px;
-
+  border: 1px solid rgb(161, 0, 0);
   cursor: pointer;
   font-family: sans-serif;
 }
@@ -153,7 +154,7 @@ option {
   justify-content: center;
   align-items: center;
   padding: 72px;
-  border-bottom: 6px solid rgb(82, 82, 82);
+  border-bottom: 8px solid rgb(41, 41, 41);
   /* z-index: -10; */
 }
 main .main-content {
@@ -264,10 +265,129 @@ main .main-content {
 .footer-title {
   color: #fff;
   background-color: #000;
-  text-align: center;
+  /* text-align: center; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   /* margin-top: 20px; */
+  border-bottom: 8px solid rgb(41, 41, 41);
 }
-.main-heading {
-  margin-top: 20px;
+article .main-heading {
+  margin-bottom: 2rem;
 }
+.question {
+  margin-top: 10px;
+}
+.questions .question {
+  font-size: 1.5rem;
+  width: 61vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2c2c2c;
+  /* margin-top: 10px; */
+}
+.questions .question:hover {
+  background-color: #333333;
+  cursor: pointer;
+}
+
+.questions .question p {
+  padding: 1.7rem 2rem;
+  margin-right: 5px;
+}
+.span-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+.span-div .span1 {
+  position: absolute;
+  border: 1px solid rgb(255, 255, 255);
+  width: 2rem;
+  height: 2px;
+
+  transform: rotate(45deg);
+}
+.span-div .span2 {
+  border: 1px solid rgb(255, 255, 255);
+  width: 2rem;
+  height: 2px;
+  transform: rotate(-45deg);
+}
+.answer {
+  display: none;
+  width: 73rem;
+  background-color: #2c2c2c;
+}
+.questions:hover .answer {
+  display: block;
+  background-color: #242323;
+  margin-top: 1px;
+  margin-left: 2px;
+}
+
+.answer .ans {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1em;
+}
+
+article .secondry-subheading {
+  margin-top: 40px;
+  margin-bottom: 0.4rem;
+}
+
 /* FOOTER SECTION END HERE */
+/* MAIN FOOTER START HERE */
+.footer-parent {
+  display: flex;
+  flex-direction: column;
+  height: 43vh;
+  color: #fff;
+  background-color: #000;
+}
+
+/* .footer-container:first-child {
+  margin-left: 3em;
+  background-color: red;
+} */
+
+.footer-parent p {
+  color: #999999;
+  font-size: 1em;
+  margin-bottom: 1em;
+  margin-top: 6em;
+  margin-left: 18em;
+}
+.footer-parent .footer-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-parent .footer-container ul {
+  list-style: none;
+}
+.footer-parent .footer-container li {
+  margin-bottom: 1em;
+}
+.footer-parent .main-footer a {
+  text-decoration: underline;
+  color: #999999;
+  font-size: 0.8em;
+}
+.footer-parent .footer-container .nav-second {
+  margin-top: 0;
+}
+.footer-parent .footer-container .nav-second .fa-solid {
+  left: 295px;
+}
+
+.footer-parent .main-footer .altamas {
+  text-decoration: none;
+}
+
+/* MAIN FOOTER END HERE */
