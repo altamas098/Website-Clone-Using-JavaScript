@@ -81,10 +81,13 @@ option {
   font-size: 1.2em;
   padding: 8px 16px;
   border-radius: 5px;
-
+  border: 1px solid rgb(161, 0, 0);
   cursor: pointer;
   font-family: sans-serif;
   /* margin-top: 13px; */
+}
+.btn-signIn:hover {
+  background-color: rgb(211, 0, 0);
 }
 
 /* NAV BAR END HERE */
@@ -143,6 +146,9 @@ option {
   border: 1px solid rgb(161, 0, 0);
   cursor: pointer;
   font-family: sans-serif;
+}
+.btn-getStarted:hover {
+  background-color: rgb(211, 0, 0);
 }
 /* MAIN AREA END HERE */
 
