@@ -307,21 +307,29 @@ article .main-heading {
 .span-div .span1 {
   position: absolute;
   border: 1px solid rgb(255, 255, 255);
-  width: 2rem;
+  width: 1.8rem;
   height: 2px;
 
-  transform: rotate(45deg);
+  /* transform: rotate(45deg); */
 }
 .span-div .span2 {
   border: 1px solid rgb(255, 255, 255);
-  width: 2rem;
+  width: 1.8rem;
   height: 2px;
+  transform: rotate(-90deg);
+}
+.questions:hover .span1 {
+  transform: rotate(45deg);
+  border: 2px solid #bcbcbc;
+}
+.questions:hover .span2 {
   transform: rotate(-45deg);
+  border: 2px solid #bcbcbc;
 }
 .answer {
   display: none;
   width: 73rem;
-  background-color: #2c2c2c;
+  /* background-color: #2c2c2c; */
 }
 .questions:hover .answer {
   display: block;
