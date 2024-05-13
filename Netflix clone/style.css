@@ -15,7 +15,7 @@ body {
 }
 
 .bg-photo {
-  background: url("bg.jpg"), var(--gradient);
+  background: url("asset/bg.jpg"), var(--gradient);
   background-blend-mode: multiply;
   height: 77vh;
   border-bottom: 8px solid rgb(41, 41, 41);
